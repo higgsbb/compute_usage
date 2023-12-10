@@ -16,7 +16,9 @@ def main():
     memory_data = []
 
     # Create a Streamlit line chart
+    st.title('CPU Usage')
     cpu_chart = st.line_chart(data=cpu_data, use_container_width=True)
+    st.title('Memory Usage')
     memory_chart = st.line_chart(data=memory_data, use_container_width=True)
 
     while True:
